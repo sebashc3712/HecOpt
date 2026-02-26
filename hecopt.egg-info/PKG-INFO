@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: hecopt
+Version: 0.1.0
+Summary: Unified End-to-End Predict-Then-Optimize Library for Combinatorial and Non-Linear Decision-Focused Learning
+Author: HecOpt Contributors
+License: MIT
+Project-URL: Homepage, https://github.com/hecopt/hecopt
+Project-URL: Documentation, https://hecopt.readthedocs.io
+Project-URL: Bug Tracker, https://github.com/hecopt/hecopt/issues
+Keywords: predict-then-optimize,decision-focused-learning,operations-research,machine-learning,combinatorial-optimization,non-linear-programming
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=2.0.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: scipy>=1.10.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0; extra == "dev"
+Requires-Dist: ruff>=0.1.0; extra == "dev"
+Provides-Extra: examples
+Requires-Dist: matplotlib>=3.6.0; extra == "examples"
+Requires-Dist: networkx>=3.0; extra == "examples"
+Requires-Dist: tqdm>=4.64.0; extra == "examples"
+Provides-Extra: all
+Requires-Dist: hecopt[dev,examples]; extra == "all"

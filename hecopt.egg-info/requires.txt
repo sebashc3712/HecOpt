@@ -1,0 +1,16 @@
+torch>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+[all]
+hecopt[dev,examples]
+
+[dev]
+pytest>=7.0
+pytest-cov>=4.0
+ruff>=0.1.0
+
+[examples]
+matplotlib>=3.6.0
+networkx>=3.0
+tqdm>=4.64.0
